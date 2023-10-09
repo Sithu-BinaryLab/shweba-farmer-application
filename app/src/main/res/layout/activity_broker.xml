@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abacus"
+    tools:context=".Broker">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary"
+            android:paddingTop="40px"
+            android:text="ပွဲရုံကဏ္ဍ"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="55dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:orientation="vertical"
+        android:alpha="0.9"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="19dp">
+
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="273dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="175px"
+            android:layout_marginTop="160px"
+            android:background="@drawable/broker"
+            android:text="ရောင်းကုန်ကြည့်မည်"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="350dp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="273dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="175px"
+            android:layout_marginTop="150px"
+            android:background="@drawable/broker"
+            android:text="ကုန်ပစ္စည်းတင်မည်"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="273dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="175px"
+            android:layout_marginTop="150px"
+            android:background="@drawable/broker"
+            android:text="ကုန်ပစ္စည်းစျေးကွက်"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

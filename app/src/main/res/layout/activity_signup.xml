@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/farmerlogin"
+    tools:context=".Signup">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="နာမည်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="ကုတ်နံပါတ်"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/fbutton"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="23dp"
+                android:text="တောင်သူ"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/cbutton"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:text="သမဝါယမ/ဆည်မြောင်းဌာန"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/dbutton"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:text="ကယ်ရီ"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/ibutton"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:text="ပွဲရုံ"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/sbutton"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:text="စျေးဆိုင်"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginbutton"
+                android:text="အကောင့်ဖွင့်မည်"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginbutton"
+                android:text="အကောင့်သို့ဝင်မည်"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
